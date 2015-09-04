@@ -2,5 +2,17 @@
 @import 'basscss';
 @import './generated/_icons.sass';
 
-h1 {
+body {
+  background-color: #101010;
+  background: radial-gradient(circle , #101010 0%, #101010 95%);
+  background-size: cover;
+}
+
+.sidebar a {
+  font-size: 0.8rem;
+  font-family: $monospace-font-family;
+}
+
+.main {
+
 }

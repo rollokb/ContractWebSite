@@ -11,7 +11,7 @@ $red: #ff4136 !default;
 $fuchsia: #f012be !default;
 $purple: #b10dc9 !default;
 $maroon: #85144b !default;
-$white: #fff !default;
+$white: #e2e2e2 !default;
 $silver: #ddd !default;
 $gray: #aaa !default;
 $black: #111 !default;
@@ -54,8 +54,9 @@ $border-width: 1px !default;
 $border-radius: 3px !default;
 $border-color: $darken-2 !default;
 
-$body-color: $black;
-$body-background-color: $white;
+
+$body-color: $white;
+$body-background-color: $black;
 
 $container-width: 56em;
 $heading-font-family: Georgia, Times, 'Times New Roman', serif;
