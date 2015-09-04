@@ -1,3 +1,4 @@
+@import 'font-awesome';
 @import './base/_variables.scss';
 @import 'basscss';
 @import './generated/_icons.sass';
@@ -8,11 +9,32 @@ body {
   background-size: cover;
 }
 
+.contact {
+  width: 100%;
+  overflow: hidden;
+}
+
 .sidebar a {
   font-size: 0.8rem;
   font-family: $monospace-font-family;
+  color: #2FBCEA;
+  width: 33.3333%;
+  text-align: center;
+  display: block;
+  float: left;
 }
 
-.main {
+.sidebar a i {
+}
 
+.sidebar .name {
+  border-top: solid 1px $border-color;
+  border-bottom: solid 1px $border-color;
+  padding-top: 1em;
+  padding-bottom:: 1em;
+  text-align: center;
+}
+
+.profile {
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
 }

@@ -54,6 +54,7 @@ $border-width: 1px !default;
 $border-radius: 3px !default;
 $border-color: $darken-2 !default;
 
+// custom vars
 
 $body-color: $white;
 $body-background-color: $black;
@@ -65,3 +66,6 @@ $line-height: 1.6;
 
 $h1-responsive: 3vw;
 $h1-responsive-max: 2.84rem;
+
+
+$border-color: $lighten-2;
