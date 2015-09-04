@@ -7,11 +7,37 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-  <h4>Ubiquitous Social Icons!</h4>
-  {% include "parts/social-icons-font.html" %}
-  {% include "parts/social-icons-svg.html" %}
-  <button id="button">Manually Load Async Module</button>
-  <p data-module="Highlight">An auto-loaded async module highlighted this!</p>
+<div class="container p4">
+  <div class="clearfix">
+    <div class="col col-3">
+      <div class="mr2">
+        <img src="images/profile.jpg" class="rounded"/>
+        <h4>Rollo Konig-Brock</h4>
+        <a>rollo@konigbrock.com</a>
+      </div>
+    </div>
+    <div class="col col-9">
+      <div class="ml2 overflow-hidden rounded py2 px2">
+        <h1 class="mt0 h1 h1-responsive">Developer & Contractor</h1>
+        <p>
+          Organic ugh vinyl banjo scenester Williamsburg, typewriter trust fund twee. Tote bag squid PBR&B meh. Post-ironic lo-fi chia street art. Mlkshk four dollar toast pop-up Banksy, chillwave forage authentic gentrify master cleanse butcher.
+        </p>
+        <hr>
+        <div class="container">
+          <div class="clearfix">
+            <div class="col col-6">
+              <h2>Recent Articles</h2>
+            </div>
+            <div class="col col-6">
+              <h2>Recent Projects</h2>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+
 {% endblock %}
 
 {% block javascript %}
