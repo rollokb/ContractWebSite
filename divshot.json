@@ -7,7 +7,7 @@
     "/*.html": "index.html"
   },
   "cache_control": {
-    "/assets/**/*": 31536000
+    "/public/**/*": 31536000
   }
 }
 
