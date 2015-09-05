@@ -3,6 +3,15 @@
 @import 'basscss';
 @import './generated/_icons.sass';
 
+
+body,html {
+  font-size: 14px;
+
+  @media #{$breakpoint-md} {
+    font-size: 16px;
+  }
+}
+
 hr {
   width: 100%;
   display: block;

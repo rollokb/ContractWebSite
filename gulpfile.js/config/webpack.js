@@ -34,7 +34,6 @@ module.exports = function(env) {
     })
   );
 
-
   if(env !== 'test') {
     // Karma doesn't need entry points or output settings
     webpackConfig.entry= {
