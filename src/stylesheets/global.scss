@@ -33,7 +33,7 @@ ul {
 .sidebar a {
   font-size: 0.8rem;
   font-family: $monospace-font-family;
-  color: #2FBCEA;
+  color: $cyan;
   text-align: center;
   display: block;
 }
@@ -59,4 +59,18 @@ ul {
   padding-top: 1em;
   padding-bottom:: 1em;
   text-align: center;
+}
+
+.bg-cyan {
+  background-color: $cyan;
+}
+
+.cyan {
+  color: $cyan;
+}
+
+.to-hire:before {
+  font-family: 'FontAwesome';
+  content: '\f105';
+  margin-right: 0.4rem;
 }
