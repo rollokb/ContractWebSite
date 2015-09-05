@@ -18,7 +18,11 @@
     "test": "gulp build:production && karma start --single-run"
   },
   "dependencies": {
-    "underscore": "^1.8.3"
+    "exports-loader": "^0.6.2",
+    "fetch": "^0.3.6",
+    "imports-loader": "^0.6.4",
+    "underscore": "^1.8.3",
+    "whatwg-fetch": "^0.9.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.3",

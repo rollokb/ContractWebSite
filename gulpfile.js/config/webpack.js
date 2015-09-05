@@ -27,6 +27,13 @@ module.exports = function(env) {
       ]
     }
   }
+  
+  webpackConfig.plugins.push(
+    new webpack.ProvidePlugin({
+      'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+    })
+  );
+
 
   if(env !== 'test') {
     // Karma doesn't need entry points or output settings
