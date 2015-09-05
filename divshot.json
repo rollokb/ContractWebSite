@@ -5,9 +5,6 @@
   "error_page": "y",
   "routes": {
     "/*.html": "index.html"
-  },
-  "cache_control": {
-    "/public/**/*": 31536000
   }
 }
 
