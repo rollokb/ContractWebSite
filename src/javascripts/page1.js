@@ -17,7 +17,7 @@ require.ensure(['underscore', 'url'], function(require) {
     
     data = data.map((obj, idx) => {
       var htmlURL = url.parse(obj.html_url);
-      ob.githubURL = htmlURL.pathname.substring(1);
+      obj.githubURL = htmlURL.pathname.substring(1);
       return obj;
     });
 
