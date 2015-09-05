@@ -1,5 +1,3 @@
-
-
 const REPO_URL = 'https://api.github.com/users/rollokb/starred';
 
 require.ensure(['underscore', 'url'], function(require) {
@@ -11,8 +9,6 @@ require.ensure(['underscore', 'url'], function(require) {
     .then(data => renderGithubStream(data))
     .catch(e => console.log("Error = ", e));
 
-  
-
   function renderGithubStream(data) {
     
     data = data.map((obj, idx) => {
@@ -22,7 +18,7 @@ require.ensure(['underscore', 'url'], function(require) {
     });
 
     const listTemplate = `
-      <% for(var i = 0; i < 10; i++){ %>
+      <% for(var i = 0; i < 5; i++){ %>
         <% var repo = repos[i]; %>
           <li><a href='<%= repo.html_url %>'><%= repo.githubURL %></li>
       <% }; %>
