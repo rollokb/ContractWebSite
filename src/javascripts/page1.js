@@ -1,19 +1,38 @@
-import './asyncModules'
-import exclaimify from './exclaimify'
 
-const button = document.getElementById('button');
 
-const alertAsyncMessage = function() {
-  // CommonJS async syntax webpack magic
-  require.ensure([], function() {
-    const message = require("./asyncMessage")
-    alert(exclaimify(message))
-  })
-}
+const REPO_URL = 'https://api.github.com/users/rollokb/starred';
 
-console.log(`
-  asset references like this one:
-    images/gulp.png
-  get updated in js too!`)
+require.ensure(['underscore', 'url'], function(require) {
+  const _ = require('underscore');
+  const url = require('url');
+  
+  
+  fetch(REPO_URL).then(r => r.json())
+    .then(data => renderGithubStream(data))
+    .catch(e => console.log("Error = ", e));
 
-button.addEventListener('click', alertAsyncMessage)
+  
+
+  function renderGithubStream(data) {
+    
+    data = data.map((obj, idx) => {
+      var htmlURL = url.parse(obj.html_url);
+      ob.githubURL = htmlURL.pathname.substring(1);
+      return obj;
+    });
+
+    const listTemplate = `
+      <% for(var i = 0; i < 10; i++){ %>
+        <% var repo = repos[i]; %>
+          <li><a href='<%= repo.html_url %>'><%= repo.githubURL %></li>
+      <% }; %>
+      `;
+  
+    var template = _.template(listTemplate);
+    var html = template({repos: data});
+
+    var gitHubEl = document.getElementById('github-feed');
+    gitHubEl.innerHTML = html;
+  }
+
+});
