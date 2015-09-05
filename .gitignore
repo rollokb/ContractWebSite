@@ -9,3 +9,5 @@ bower_components/
 
 *.swp
 *.swo
+npm-debug.log
+.divshot-cache/
