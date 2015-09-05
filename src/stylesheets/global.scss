@@ -3,10 +3,12 @@
 @import 'basscss';
 @import './generated/_icons.sass';
 
-body {
-  background-color: #101010;
-  background: radial-gradient(circle , #101010 0%, #101010 95%);
-  background-size: cover;
+ul {
+  margin-bottom: 0;
+}
+
+.monospace {
+  font-family: $monospace-font-family;
 }
 
 .contact {
@@ -22,9 +24,6 @@ body {
   text-align: center;
   display: block;
   float: left;
-}
-
-.sidebar a i {
 }
 
 .feeds ul {
@@ -49,8 +48,3 @@ body {
   padding-bottom:: 1em;
   text-align: center;
 }
-
-.profile {
-}
-
-
