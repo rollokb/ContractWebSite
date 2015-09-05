@@ -3,6 +3,11 @@
 @import 'basscss';
 @import './generated/_icons.sass';
 
+hr {
+  width: 100%;
+  display: block;
+}
+
 ul {
   margin-bottom: 0;
 }
@@ -20,10 +25,8 @@ ul {
   font-size: 0.8rem;
   font-family: $monospace-font-family;
   color: #2FBCEA;
-  width: 33.3333%;
   text-align: center;
   display: block;
-  float: left;
 }
 
 .feeds ul {
