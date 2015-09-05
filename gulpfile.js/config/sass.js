@@ -8,6 +8,7 @@ module.exports = {
     imagePath: 'images', // Used by the image-url helper
     includePaths: [
       './bower_components/basscss-sass',
+      './bower_components/font-awesome/scss'
     ],
   }
 }
