@@ -5,6 +5,14 @@
   "error_page": "y",
   "routes": {
     "/*.html": "index.html"
+  },
+
+  "__development": {    
+    "headers": {
+      "/**": {
+        "X-Robots-Tag": "noindex, nofollow"
+      }
+    }
   }
 }
 
