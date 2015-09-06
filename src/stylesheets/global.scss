@@ -55,10 +55,20 @@ ul {
 
 .sidebar .name {
   border-top: solid 1px $border-color;
-  border-bottom: solid 1px $border-color;
   padding-top: 1em;
-  padding-bottom:: 1em;
   text-align: center;
+}
+
+.fa-map-marker {
+  margin-right: 0.4rem;
+}
+
+.sidebar .location {
+  border-bottom: solid 1px $border-color;
+  text-align: center;
+  padding-bottom:: 1em;
+  padding-top: 0.4em;
+  text-decoration: underline;
 }
 
 .bg-cyan {
